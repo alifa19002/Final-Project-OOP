@@ -2,11 +2,11 @@
 | dd/mm/yyyy
 
 ### Team (Insert your name)
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| NPM           | Name          |
+| ------------- |---------------|
+| 140810190010  | Cut Fazira Z. |
+| 140810190018  | Alifa H. A.   |
+| 140810190052  | Putri A. F.   |
 
 ## Sprint Backlog Keseluruhan 
 | ID  | Title/Desc | Asignee | 
