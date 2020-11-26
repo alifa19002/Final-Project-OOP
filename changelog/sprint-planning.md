@@ -12,32 +12,32 @@
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
 | 1.1 | Tampilan grid 9x9 (dengan subgrid 3x3) | Alifa | 
-| 2.2 | Implementasi OOP dasar| Alifa |
-| 3.3 | Mengacak angka | Putri | 
-| 4.4 | Tampilan Difficulty| Putri |
-| 5.5 | Tampilan string kosong dan angka clue| Icut |
-| 6.6 | Set angka yang tidak dimasking tidak bisa diganti| Asignee |
-| 7.7 | Cek angka input benar atau salah| Asignee |
-| 8.8 | Highlight ubin yang bernilai sama di 1 baris, 1 kolom, atau 1 subgrid| Asignee |
-| 9.9 | Tampilan button reset/restart| Asignee |
-| 10.10 | Penyempurnaan Tampilan| Asignee |
+| 1.2 | Implementasi OOP dasar| Alifa |
+| 1.3 | Mengacak angka | Putri | 
+| 1.4 | Tampilan Difficulty| Putri |
+| 1.5 | Tampilan string kosong dan angka clue| Icut |
+| 2.1 | Set angka yang tidak dimasking tidak bisa diganti| Asignee |
+| 2.2 | Cek angka input benar atau salah| Asignee |
+| 2.3 | Highlight ubin yang bernilai sama di 1 baris, 1 kolom, atau 1 subgrid| Asignee |
+| 2.4 | Tampilan button reset/restart| Asignee |
+| 3.1 | Penyempurnaan Tampilan| Asignee |
 
 Opsional
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 11.11 | Menu Bar | Asignee | 
-| 12.12 | Timer| Asignee |
-| 13.13 | Action Pause/Resume | Asignee | 
-| 14.14 | Menu Highscore | Asignee | 
+| 3.2 | Menu Bar | Asignee | 
+| 3.3 | Timer| Asignee |
+| 3.3 | Action Pause/Resume | Asignee | 
+| 3.4 | Menu Highscore | Asignee | 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
 | 1.1 | Tampilan grid 9x9 (dengan subgrid 3x3) | Alifa | 
-| 2.2 | Implementasi OOP dasar| Alifa |
-| 3.3 | Mengacak angka | Putri | 
-| 4.4 | Tampilan Difficulty| Putri |
-| 5.5 | Tampilan string kosong dan angka clue| Icut |
+| 1.2 | Implementasi OOP dasar| Alifa |
+| 1.3 | Mengacak angka | Putri | 
+| 1.4 | Tampilan Difficulty| Putri |
+| 1.5 | Tampilan string kosong dan angka clue| Icut |
 
 ## Retrospective 
 
