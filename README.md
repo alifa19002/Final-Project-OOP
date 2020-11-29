@@ -19,29 +19,36 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    -  Scrum Meeting untuk berdiskusi dan membahas sprint backlog secara keseluruhan
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from 16 Nov until 22 Nov)** 
-   - Short changes 1
-   - Short changes 2
+   - Membuat tampilan grid 9x9 (dengan subgrid 3x3)
+   - Pengimplementasian OOP Dasar
+   - Membuat logika untuk mengacak angka
+   - Membuat tampilan difficulty
+   - Membuat tampilan string kosong dan angka clue
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from 23 Nov until 29 Nov)** 
-   - Short changes 1
-   - Short changes 2
+   - Set angka yang tidak dimasking tidak bisa diganti
+   - Membuat logika untuk mengecek inputan user benar atau salah
+   - Membuat logika untuk menghighlight ubin yang bernilai sama di 1 baris, 1 kolom, atau 1 subgrid
+   - Membuat tampilan button reset/restart
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from 30 Nov until 6 Dec)** 
-   - Short changes 1
-   - Short changes 2
+   - Penyempurnaan Tampilan
+   - Challenge ideas (optional)
 
 ## Running The App
 
-- Tampilkan grid ubin dengan besar 9 x 9 yang terdiri dari 3 x 3 sub-grids dimana ubin adalah komponen drawing board.
-- Acak angka di dalam ubin dengan syarat unik (tidak ada angka yang sama pada 1 baris, 1 kolom, dan 1 sub-grids).
-- Lakukan masking terhadap ubin tertentu (angka disembunyikan dan dijadikan text field)
-- Ubin yang tidak dimasking bersifat read-only (angka didalamnya tidak bisa diubah)
-- Cek apakah urutan tersebut dapat dipecahkan dengan aturan: Setiap angka yang didahului oleh angka yang lebih besar dianggap sebagai inversi, jumlah inversi dari puzzle harus genap.
-- Buat listener untuk memproses input. Setiap inputan user akan dicek:
-    - Koordinat x dan y dimana inputan tersebut berada
-    - Apakah nilai yang dimasukan pada ubin sesuai dengan jawaban, jika sesuai maka ubah warna tulisan menjadi hijau, jika tidak sesuai maka ubah menjadi warna merah
-    - Highlight ubin yang sudah berisi angka, jika dalam 1 baris, 1 kolom, atau 1 sub-grids berisi angka yang sama dengan inputan user
-- Buat button “Reset/Restart” untuk mengacak ulang grid dan memulai game baru.
+- Compile File Sudoku.java
+- Run sesuai dengan tingkat kesulitan (Difficulty Level: EASY, MEDIUM, HARD) yang diinginkan, dengan rincian command :
+   - java Sudoku easy untuk level ‘easy’
+   - java Sudoku easy untuk level ‘medium’
+   - java Sudoku easy untuk level ‘hard’
+- Tampilan interface Sudoku akan muncul (grid 9 x 9 dengan subgrid 3 x 3 beserta menu dan tampilan lainnya)
+- User dapat melakukan input angka terhadap grid yang editable sesuai dengan level, dimana semakin sulit levelnya maka semakin banyak pula grid/tile yang harus diisi
+- Klik enter untuk memasukkan angka sekaligus memeriksa apakah inputan user sudah benar dan sesuai
+- Jika sesuai, maka inputan user akan berwarna hijau. Namun jika sebaliknya, akan berwarna merah dan tile yang berisi angka yang sama dengan inputan user dalam 1 subgrid akan dihighlight dengan warna merah
+- Jumlah 'Cells remaining' akan terus berkurang beriringan dengan jumlah inputan user yang sesuai dengan jawaban
+- Dalam permainan, user bisa mengakses pilihan menu (File dan Options). Pada menu File, user dapat restart game, reset jawaban, dan exit (keluar). Sedangkan pada menu Options, user dapat mengganti level permainan (Easy, Medium, Hard)
+- Setelah semua tile/grid terisi dengan benar dan tidak ada lagi 'remaining cells', maka permainan selesai dan akan muncul window dialog 'Congratulations'
 
 ## Classes Used
 
