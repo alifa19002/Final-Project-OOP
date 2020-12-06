@@ -1,7 +1,7 @@
 # Scrum Report (Sprint 2)
 | From 23/11/2020 to 29/11/2020
 
-## Team (Insert your name)
+## Team PARACETAMOL
 | NPM           | Name        |
 | ------------- |-------------|
 | 140810190010  | Cut Fazira Z.   |
@@ -30,3 +30,5 @@ Belum terlihat space atau pembeda antara subgrid 3x3 yang satu dengan yang lainn
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
 | 3.1 | Penyempurnaan Tampilan | All | 
+| 3.2 | Menu Bar(Opsional) | All | 
+

@@ -1,7 +1,7 @@
 # Scrum Report (Sprint 1)
 | From 16/11/2020 to 22/11/2020
 
-## Team (Insert your name)
+## Team PARACETAMOL
 | NPM           | Name        |
 | ------------- |-------------|
 | 140810190010  | Cut F Z    |

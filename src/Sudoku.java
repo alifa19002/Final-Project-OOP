@@ -32,7 +32,7 @@ public class Sudoku extends JFrame {
 	public static final int CANVAS_WIDTH = CELL_SIZE * UK_GRID;
 	public static final int CANVAS_HEIGHT = CELL_SIZE * UK_GRID;
 
-	public static final Color OPEN_CELL_BGCOLOR = Color.YELLOW;	// warna background untuk cell yang akan diisi user
+	public static final Color OPEN_CELL_BGCOLOR = Color.PINK;	// warna background untuk cell yang akan diisi user
 	public static final Color OPEN_CELL_TEXT_YES = new Color(0, 255, 0); // warna font ketika jawaban user benar
 	public static final Color OPEN_CELL_TEXT_NO = Color.RED; // warna font ketika jawaban user salah
 	public static final Color CLOSED_CELL_BGCOLOR = new Color(240, 240, 240); // warna background untuk cell yang berisi angka clue
@@ -230,10 +230,8 @@ public class Sudoku extends JFrame {
 			} else {
 				i--;
 			}
-        }
-        
+        }   
 	}
-
 	private class InputListener implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {

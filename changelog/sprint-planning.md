@@ -1,7 +1,7 @@
 # Sprint Planning 
 | 16/11/2020
 
-### Team (Insert your name)
+### Team PARACETAMOL
 | NPM           | Name          |
 | ------------- |---------------|
 | 140810190010  | Cut Fazira Z. |
@@ -25,10 +25,10 @@
 Opsional
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.2 | Menu Bar | Asignee | 
-| 3.3 | Timer| Asignee |
-| 3.3 | Action Pause/Resume | Asignee | 
-| 3.4 | Menu Highscore | Asignee | 
+| 3.2 | Menu Bar | All | 
+| 3.3 | Timer| All |
+| 3.3 | Action Pause/Resume | All | 
+| 3.4 | Menu Highscore | All | 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
