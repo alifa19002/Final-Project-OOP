@@ -44,6 +44,9 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - java Sudoku easy untuk level ‘hard’
 
 ## Classes Used
+1. Kelas Puzzle merupakan class untuk mengacak isi angka pada sudoku
+2. Kelas Inputlistener merupakan class yang berisi action listener untuk set difficulties pada Menu Bar dari Sudoku
+3. Kelas Sudoku berfungsi untuk menampilkan UI(tampilan) dan isi serta merupakan main class dari sudoku
 
 ![Mockup](/images/UML.png)
 
