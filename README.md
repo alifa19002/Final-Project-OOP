@@ -45,9 +45,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Classes Used
 
-TO;DO
-
-UML image here
+![Mockup](/images/UML.png)
 
 ## Notable Assumption and Design App Details
 

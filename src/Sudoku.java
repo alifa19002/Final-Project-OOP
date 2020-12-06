@@ -27,7 +27,8 @@ public class Sudoku extends JFrame {
 
 	public static final int UK_GRID = Puzzle.UK_GRID; // ukuran grid = 9
 	public static final int UK_SUBGRID = Puzzle.UK_SUBGRID; // ukuran subgrid = 3
-	private static final Color OPEN_CELL_BGCOLOR = Color.PINK;	// warna background untuk cell yang akan diisi user
+	private static final Color OPEN_CELL_BGCOLOR1 = Color.GRAY;	// warna background untuk cell yang akan diisi user
+	private static final Color OPEN_CELL_BGCOLOR2 = Color.PINK;	// warna background untuk cell yang akan diisi user
 	private static final Color CLOSED_CELL_BGCOLOR = new Color(240, 240, 240); // warna background untuk cell yang berisi angka clue
     private static final Color CLOSED_CELL_TEXT = Color.BLACK; // warna font angka clue
 	private static final int CELL_SIZE = 50; // lebar atau tinggi cell (pixel)
@@ -120,10 +121,15 @@ public class Sudoku extends JFrame {
                     InputListener listener = new InputListener();
                     for (int row = 0; row < UK_GRID; ++row) {
                         for (int col = 0; col < UK_GRID; ++col) {
+							if(((row>=0 && row<=2)&&(col>=0 && col<=2))||((row>=0 && row<=2)&&(col>=6 && col<=8))||((row>=3 && row<=5)&&(col>=3 && col<=5))||((row>=6 && row<=8)&&(col>=0 && col<=2))||((row>=6 && row<=8)&&(col>=6 && col<=8))){
+								tfDisplays[row][col].setBackground(OPEN_CELL_BGCOLOR1);
+							}
+							else{
+								tfDisplays[row][col].setBackground(OPEN_CELL_BGCOLOR2);
+							}
                             if (restMasks[row][col]) {
                                 tfDisplays[row][col].setText(""); // set ke string kosong
                                 tfDisplays[row][col].setEditable(true);	// dapat diedit
-                                tfDisplays[row][col].setBackground(OPEN_CELL_BGCOLOR);
                                 tfDisplays[row][col].addActionListener(listener);
                             }else {
                                 tfDisplays[row][col].setText(puzzle[row][col] + ""); // sudah berisi angka
@@ -164,7 +170,35 @@ public class Sudoku extends JFrame {
 	        level3Item.addActionListener(dmlistener);
 	        difficultyMenu.add(level3Item);
 			menu.add(optionsMenu);
-			
+			JMenu helpMenu = new JMenu("Help");
+			JMenuItem help = new JMenuItem("Game Instructions");
+	        help.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					JOptionPane.showMessageDialog(null, "Cara Bermain\n1. Angka berkisar 0-9\n2. Angka tidak boleh sama dalam 1 kolom, 1 baris, dan 1 subgrid\n3. Masukkan angka yang sekiranya sesuai pada kotak kosong\n4. Ketik Enter\n5. Jika angka benar maka akan berwarna hijau, jika salah berwarna merah");
+				}
+			});
+			helpMenu.add(help);
+			menu.add(helpMenu);
+
+			JMenu aboutMenu = new JMenu("About");
+			JMenuItem about = new JMenuItem("Sudoku Game");
+	        about.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					JOptionPane.showMessageDialog(null, "Sudoku adalah teka-teki penempatan angka kombinatorial berbasis logika. \nDalam sudoku klasik, tujuannya adalah untuk mengisi kisi berukuran 9 x 9 dengan angka\nsehingga setiap kolom, setiap baris, dan masing-masing dari sembilan subkisi 3 x 3 yang \nmenyusun kisi tersebut berisi semua digit dari 1 hingga 9.");
+				}
+			});
+			aboutMenu.add(about);
+			JMenuItem about2 = new JMenuItem("Our Team");
+	        about2.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					JOptionPane.showMessageDialog(null, "Paracetamol Team :\n1. Cut Fazira Z [140810190010]\n2. Alifa Hafida A [140810190018]\n3. Putri Ainur F [140810190052]\n\nTeknik Informatika\nUniversitas Padjadjaran");
+				}
+			});
+			aboutMenu.add(about2);
+			menu.add(aboutMenu);
 	        setJMenuBar(menu);
 	
 	    // inisialisasi game
@@ -190,10 +224,15 @@ public class Sudoku extends JFrame {
 				tfDisplays[row][col].setHorizontalAlignment(JTextField.CENTER);
 				tfDisplays[row][col].setFont(FONT_NUMBERS);
 				board.add(tfDisplays[row][col]); 
+				if(((row>=0 && row<=2)&&(col>=0 && col<=2))||((row>=0 && row<=2)&&(col>=6 && col<=8))||((row>=3 && row<=5)&&(col>=3 && col<=5))||((row>=6 && row<=8)&&(col>=0 && col<=2))||((row>=6 && row<=8)&&(col>=6 && col<=8))){
+					tfDisplays[row][col].setBackground(OPEN_CELL_BGCOLOR1);
+				}
+				else{
+					tfDisplays[row][col].setBackground(OPEN_CELL_BGCOLOR2);
+				}
 				if (masks[row][col]) {
 					tfDisplays[row][col].setText(""); // set menjadi string kosong
 					tfDisplays[row][col].setEditable(true);	// dapat diedit
-					tfDisplays[row][col].setBackground(OPEN_CELL_BGCOLOR);
 					tfDisplays[row][col].addActionListener(listener);
 				} else {
 					tfDisplays[row][col].setText(puzzle[row][col] + ""); // sudah berisi angka
